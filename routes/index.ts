@@ -6,4 +6,4 @@ router.get('/', function(req: express.Request, res: express.Response, next: Func
   res.render('index', { title: 'Express' });
 });
 
-module.exports = router;
+export = router;

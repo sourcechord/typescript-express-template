@@ -6,4 +6,4 @@ router.get('/', function(req: express.Request, res: express.Response, next: Func
   res.send('respond with a resource');
 });
 
-module.exports = router;
+export = router;
