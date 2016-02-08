@@ -7,7 +7,9 @@
     "postinstall": "gulp copyLib",
     "build": "tsc",
     "prestart": "npm run build",
-    "start": "node ./bin/www"
+    "server": "node ./bin/www",
+    "browser": "opener http://localhost:3000/",
+    "start": "npm-run-all -p server browser"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -22,6 +24,8 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
+    "npm-run-all": "^1.5.1",
+    "opener": "^1.4.1",
     "typescript": "^1.7.5"
   }
 }
